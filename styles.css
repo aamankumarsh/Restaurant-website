@@ -1,0 +1,83 @@
+body {
+  text-align: center;
+}
+h1 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 1.5;
+}
+h2 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1.5;
+}
+p {
+  font-size: 1.4rem;
+}
+em {
+  font-size: 1.5rem;
+}
+/* This is Title section  */
+#title {
+  background-color: black;
+}
+.container-fluid {
+  padding: 3% 10%;
+  padding-bottom: 0px;
+}
+.brandH {
+  padding-left: 0px;
+  font-size: 1.4rem;
+  font-family: "Arimo", sans-serif;
+}
+.brandT {
+  font-family: "Fredoka One", cursive;
+  font-size: 2rem;
+}
+.brandD {
+  padding-top: 70px;
+}
+
+/* This is Service section */
+.ser {
+  padding-top: 10%;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1.5;
+}
+#service {
+  padding: 14% 14%;
+  margin: auto;
+}
+.icon {
+  color: rgb(10, 182, 19);
+}
+/* This is  Reviews section */
+.review {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+#review {
+  background-color: black;
+  color: white;
+  padding: 10% 15%;
+}
+
+/* This is About Section */
+#About {
+  padding: 7% 7%;
+}
+
+/* This is Visit Us Section */
+#visit {
+  padding: 5% 10%;
+  padding-bottom: 1%;
+  background-color: black;
+  color: white;
+}
+
+/* This is Footer */
+.soc-icon {
+  margin: 20px 10px;
+}

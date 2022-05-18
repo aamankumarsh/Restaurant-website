@@ -1,0 +1,123 @@
+<%- include("links") -%>
+    <style>
+      body {
+        background-color: black;
+      }
+      .brandT {
+        font-family: "Fredoka One", cursive;
+        font-size: 4rem;
+      }
+      p,
+      .txt {
+        font-size: 1.5rem;
+        font-family: "Arimo", sans-serif;
+      }
+      hr {
+        background: white;
+      }
+
+      .contact-form {
+        color: white;
+        width: 30%;
+        margin-top: 70px;
+        padding: 20px;
+      }
+      .soc-icon {
+        margin: 20px 10px;
+      }
+      .brandH {
+        width: 50%;
+        margin: auto;
+      }
+      @media (max-width: 1200px) {
+        .brandH {
+          padding-top: 70px;
+          margin: auto;
+        }
+        .brandT {
+          font-size: 5rem;
+        }
+        p,
+        .txt {
+          font-size: 2.5rem;
+        }
+      }
+    </style>
+      <title>Update Profile</title>
+  </head>
+  <body>
+    <%- include("headerM") -%>
+    <section>
+      <div class="container contact-form">
+        <div class="row">
+          <div class="col-lg-12 serv-box">
+            <h1 style="text-align: center">Update Your Profile</h1>
+            <hr />
+            <form action="/update_profile" method="post">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="form-group">
+                    <label class="txt">First Name</label>
+                    <input
+                      pattern="[a-zA-Z \s]+" 
+                      oninvalid="alert('Please enter only alphabets!');"
+                      type="text"
+                      class="form-control"
+                      name="fname"
+                      value="<%=fname%>"
+                      autocomplete="off";
+                      required
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label class="txt">Last Name</label>
+                    <input
+                      pattern="[a-zA-Z \s]+" 
+                      oninvalid="alert('Please enter only alphabets!');"
+                      type="text"
+                      class="form-control"
+                      name="lname"
+                      value="<%=lname%>"
+                      autocomplete="off";
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label class="txt">Password</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      name="password"
+                      placeholder="Password"
+                      required
+                    />
+                  </div>
+                  <div class="form-group send">
+                    <button
+                      class="btn btn-outline-light btn-block"
+                      type="submit"
+                    >
+                      <p>Update</p>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div>
+              <form action="/account_deleted" method="post">
+                <div class="form-group del">
+                  <button
+                    class="btn btn-outline-light btn-block"
+                  >
+                    <p>Click Here To Delete Your Account</p>
+                  </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <%- include("footerH") -%>
+  </body>
+</html>

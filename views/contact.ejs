@@ -1,0 +1,161 @@
+    <%- include("links") -%>
+    <style>
+      body {
+        background-color: black;
+      }
+      .brandT {
+        font-family: "Fredoka One", cursive;
+        font-size: 4rem;
+      }
+      p,
+      .txt {
+        font-size: 1.5rem;
+        font-family: "Arimo", sans-serif;
+      }
+      hr {
+        background: white;
+      }
+
+      .contact-form {
+        color: white;
+        width: 80%;
+        margin-top: 70px;
+        padding: 20px;
+      }
+      .soc-icon {
+        margin: 20px 10px;
+      }
+      .brandH {
+        width: 50%;
+        margin: auto;
+      }
+      @media (max-width: 1200px) {
+        .brandH {
+          padding-top: 70px;
+          margin: auto;
+        }
+        .brandT {
+          font-size: 5rem;
+        }
+        p,
+        .txt {
+          font-size: 2.5rem;
+        }
+      }
+    </style>
+      <title>Contact Us</title>
+  </head>
+  <body>
+    <%- include("headerM") -%>
+    <section>
+      <div class="container-fluid contact-form">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 serv-box">
+            <h1 style="text-align: center">Contact Us</h1>
+            <hr />
+            <form action="/contact" method="post">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="form-group">
+                    <label class="txt">First Name</label>
+                    <input
+                      pattern="[a-zA-Z \s]+" 
+                      oninvalid="alert('Please enter only alphabets!');"
+                      type="text"
+                      class="form-control"
+                      name="firstName"
+                      value="<%=fname%>"
+                      required
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label class="txt">Last Name</label>
+                    <input
+                      pattern="[a-zA-Z \s]+" 
+                      oninvalid="alert('Please enter only alphabets!');"
+                      type="text"
+                      class="form-control"
+                      name="lastname"
+                      value="<%=lname%>"
+                      required
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label class="txt">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      value="<%=email%>"
+                      required
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <p>Are You Satisfied With Our Services</p>
+                    <datalist id="suggestions">
+                      <option>Yes!</option>
+                      <option>No</option>
+                      <option>Pretty Much</option>
+                      <option>Can't Say For Sure</option>
+                    </datalist>
+                    <input
+                      autocomplete="on"
+                      list="suggestions"
+                      class="form-control"
+                      name="service"
+                      required
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label class="txt">Message</label>
+                    <textarea
+                      class="form-control"
+                      rows="7"
+                      name="review"
+                      required
+                    ></textarea>
+                  </div>
+
+                  <div class="form-group send">
+                    <button
+                      class="btn btn-outline-light btn-block"
+                      type="submit"
+                    >
+                      <p>Send</p>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div
+            class="col-lg-6 col-md-12 serv-box"
+            style="
+              text-align: center;
+              padding-top: 50px;
+              margin: auto;
+              color: rgb(10, 182, 19);
+            "
+          >
+            <i class="fas fa-hands-wash fa-10x"></i>
+            <p
+              style="
+                font-size: 2.7rem;
+                padding-top: 40px;
+                font-family: Fredoka One, cursive;
+              "
+            >
+              <%=`${fname} ${lname} `%><br />
+              Please Wash Your Hands Frequently
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <%- include("footerH") -%>
+  </body>
+</html>

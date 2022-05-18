@@ -1,0 +1,53 @@
+    <%- include("links") -%>
+    <!-- Linking The Custom CSS -->
+    <link href="signin.css" rel="stylesheet" />
+    <title>Sign Up</title>
+  </head>
+
+  <body>
+    <form action="/" class="form-signin" method="post">
+      <img src="logo.jpg" alt="" width="200" height="200" />
+      <h1>Sign Up</h1>
+      <input
+        pattern="[a-zA-Z \s]+" 
+        oninvalid="alert('Please enter only alphabets!');"
+        type="text"
+        class="form-control"
+        name="fname"
+        placeholder="First Name"
+        required
+        autofocus
+      />
+      <input
+        pattern="[a-zA-Z \s]+" 
+        oninvalid="alert('Please enter only alphabets!');"
+        type="text"
+        class="form-control"
+        name="lname"
+        placeholder="Last Name"
+        required
+      />
+      <input
+        type="email"
+        class="form-control"
+        name="email"
+        placeholder="Email address"
+        required
+      />
+      <input
+        type="password"
+        class="form-control"
+        name="password"
+        placeholder="Password"
+        required
+      />
+      <button class="btn btn-lg btn-primary btn-block" type="submit">
+        Sign Up
+      </button>
+      <%- include("co") -%>
+      <!-- Linking the login page -->
+      <a href="/login"><h5>Already Registered</h5></a>
+      <a href="/password"><h5>Forgotten Password</h5></a>
+    </form>
+  </body>
+</html>

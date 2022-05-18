@@ -1,0 +1,32 @@
+<%- include("links") -%>
+<!-- Linking The Custom CSS -->
+<link href="signin.css" rel="stylesheet" />
+<title>Login In</title>
+</head>
+
+<body>
+<form action="/login" class="form-signin" method="post">
+  <img src="logo.jpg" alt="Prime Location Logo" width="200" height="200" />
+  <h1>Login In</h1>
+  <input
+    type="email"
+    class="form-control"
+    name="email"
+    placeholder="Email address"
+    required
+    autofocus
+  />
+  <input
+    type="password"
+    class="form-control"
+    name="password"
+    placeholder="Password"
+    required
+  />
+  <button class="btn btn-lg btn-primary btn-block" type="submit">
+    Log In
+  </button>
+  <%- include("co") -%>
+</form>
+</body>
+</html>

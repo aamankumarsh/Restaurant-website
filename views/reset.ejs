@@ -1,0 +1,24 @@
+<%- include("links") -%>
+<!-- Linking The Custom CSS -->
+<link href="signin.css" rel="stylesheet" />
+<title>Login In</title>
+</head>
+
+<body>
+<form action="/reset" class="form-signin" method="post">
+  <img src="logo.jpg" alt="Prime Location Logo" width="200" height="200" />
+  <h1>Please Don't Close This Window</h1>
+  <input
+    type="number"
+    class="form-control"
+    name="code"
+    placeholder="Verification Code"
+    required
+  />
+  <button class="btn btn-lg btn-primary btn-block" type="submit">
+    Done
+  </button>
+  <%- include("co") -%>
+</form>
+</body>
+</html>

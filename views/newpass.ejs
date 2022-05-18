@@ -1,0 +1,24 @@
+<%- include("links") -%>
+<!-- Linking The Custom CSS -->
+<link href="signin.css" rel="stylesheet" />
+<title>Login In</title>
+</head>
+
+<body>
+<form action="/newpass" class="form-signin" method="post">
+  <img src="logo.jpg" alt="Prime Location Logo" width="200" height="200" />
+  <h1>Please Enter Your New Password</h1>
+  <input
+    type="password"
+    class="form-control"
+    name="password"
+    placeholder="Password"
+    required
+  />
+  <button class="btn btn-lg btn-primary btn-block" type="submit">
+    Done
+  </button>
+  <%- include("co") -%>
+</form>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<%- include("links") -%> 
+<%- include("thankHeader") -%>
+<title>Thank You</title>
+</head>
+<body>
+  <div
+    style="margin: auto; padding-top: 200px; width: 100%; text-align: center"
+  >
+    <h1>Thank You</h1>
+    <h2><%=`${fname} ${lname} 😊`%></h2>
+  </div>
+<div>
+  <p style="padding-bottom: 100px">Your responses have been recorded</p>
+  <a href="/home">
+    <button type="button" class="btn btn-outline-light btn-lg do">
+      <i class="fas fa-utensils"></i> Back To Home Page
+    </button>
+  </a>
+  <%- include("thankFooter") -%>
+</div>

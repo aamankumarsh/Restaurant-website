@@ -1,0 +1,201 @@
+    <%- include("links") -%>
+    <!-- Linking The Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <!-- This is Title section -->
+    <section id="title">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark brandH">
+          <p class="navbar-brand brandT">Prime Location</p>
+          <a
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#NAV"
+            aria-controls="NAV"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+        </a>
+          <div class="collapse navbar-collapse" id="NAV">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#review">Reviews</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#About">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/update_profile">Update Profile</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <h1 style="padding-top: 20px; font-size: 3rem; ">
+          <!-- Using ejs -->
+          <%=`Welcome! ${fname} ${lname} 😊`%>
+        </h1>
+        <div class="row brandD">
+          <div class="col-lg-6" style="margin: auto;">
+            <h1 style="padding-bottom: 10px;">Eat Sleep Conquer Repeat</h1>
+            <a href="/menu"
+              ><button type="button" class="btn btn-outline-light btn-lg do">
+                <i class="fas fa-utensils"></i> Menu
+              </button>
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <img src="pizzablack.jpg" alt="" width="90%" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- This is Service section -->
+    <section id="service">
+      <div class="row">
+        <div class="col-lg-3 serv-box">
+          <i class="fas fa-heartbeat fa-6x icon"></i>
+          <h3 class="ser">Healthy Food</h3>
+        </div>
+        <div class="col-lg-3 serv-box">
+          <i class="fas fa-hands-wash fa-6x icon"></i>
+          <h3 class="ser">Proper Hygiene</h3>
+        </div>
+        <div class="col-lg-3 serv-box">
+          <i class="fas fa-bolt fa-6x icon"></i>
+          <h3 class="ser">Fast Service</h3>
+        </div>
+        <div class="col-lg-3 serv-box">
+          <i class="fas fa-seedling fa-6x icon"></i>
+          <h3 class="ser">Pure Vegetarian</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- This is  Reviews section -->
+    <section
+      id="review"
+      class="carousel slide"
+      data-ride="carousel"
+      data-interval="3000"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h2>
+            The Food here is freshly made from starter to desserts as a tourist
+            we are surprised how real indian food taste like! And a lot of
+            variety which you will enjoy !
+          </h2>
+          <img src="itachi.png" alt="" class="review" />
+          <em>itachi uchiha</em>
+        </div>
+        <div class="carousel-item">
+          <h2>
+            The food was really tasty and upto the mark the starters & welcome
+            drinks were really top notch and drollworthy. Would love to visit
+            soon. Would love to visit soon
+          </h2>
+          <img src="shisui.png" alt="" class="review" />
+          <em>shisui uchiha</em>
+        </div>
+        <div class="carousel-item">
+          <h2>
+            The food was really tasty & top notch the welcome drinks and
+            starters were worthwhile specially the presenation was upto the
+            mark. Would love to visit soon
+          </h2>
+          <img src="kakashi.png" alt="" class="review" />
+          <em>kakashi hatake</em>
+        </div>
+        <div class="carousel-item">
+          <h2>
+            Meets an elite standard by which you judge all other restaurants.
+            The staff is always ready to help and the food is both delicious and beautifully presented.
+          </h2>
+          <img src="obito.png" alt="" class="review" />
+          <em>obito uchiha</em>
+        </div>
+        <div class="carousel-item">
+          <h2>
+            Delicious food, appealing atmosphere, helpful staff, and brilliant
+            service. Me and my friends had a great dinning experience here. We
+            would like to visit this restaurant again.
+          </h2>
+          <img src="madara.png" alt="" class="review" />
+          <em>madara uchiha</em>
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#review"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#review"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </section>
+    <!-- This is About Section -->
+    <section id="About">
+      <div class="container-fluid">
+        <h1 style="color: black">About Us</h1>
+        <p>
+          <strong>
+            Prime Location's is one of the greatest places in the city & the
+            legendary taste of our specially prepared dishes still rules the
+            town.We offer Multiple Vegetarian Options with guaranteed food
+            quality. We heartily welcome you to come unwind, socialize and share
+            good times with your family & friends at Prime Location's or order
+            online and enjoy delicous food with comfort of home.Prime Location's
+            restaurant serves freshly prepared authentic Dishes and we believe
+            that taste is all about a balance between sweet, sour, pungent and
+            spicy food. We welcome you to experience the taste of Prime
+            Location's and hope that you would never forget the taste of our
+            authentic mouth-watering dishes and the overall experience at our
+            restaurant.
+          </strong>
+        </p>
+      </div>
+    </section>
+
+    <!-- This is Visit Us Section -->
+    <section id="visit">
+      <h1 style="font-size: 3.5rem">Visit Us</h1>
+      <hr />
+      <h2 style="font-size: 1.9rem">Special Requests?</h2>
+      <p>
+        Do you have dietary concerns? <br />
+        Questions about an upcoming event? <br />
+        Give us a call -> 123456789 <br>
+        Email us at -> primelocation@gmail.com
+      </p>
+      <h2 style="font-size: 1.9rem">Near PG Degree college, Anu Hamirpur</h2>
+      <p>Hamirpur, Himachal Pradesh [177005]</p>
+      <h3>Opening Hours</h3>
+      <p>
+        Mon Closed <br />
+        Tue 05:00 pm – 09:00 pm <br />
+        Wed 05:00 pm – 09:00 pm <br />
+        Thu 05:00 pm – 09:00 pm <br />
+        Fri 05:00 pm – 09:00 pm <br />
+        Sat 05:00 pm – 08:00 pm <br />
+        Sun Closed
+      </p>
+    </section>
+    <!-- This is Footer -->
+    <%- include("footerH") -%>
+  </body>
+</html>
